@@ -18,14 +18,14 @@
      
 
 ## 🏂 页面效果
-1️⃣ 首页展示
-![WonderFox_Video_Recording_002_001.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a6eee149f08f4d8ea15e471b2b4663f2~tplv-k3u1fbpfcp-watermark.image?)
+1️⃣ 查看项目
+<img src="./gifs/查看.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
 </br>
-2️⃣ 查看项目
-![WonderFox_Video_Recording_004_001.gif](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/1682f0d3630049a0ae33562bbd04a77d~tplv-k3u1fbpfcp-watermark.image?)
-3️⃣ 新建项目
-![添加.gif](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8277c36a53af4ecbafaf1c63ed57f946~tplv-k3u1fbpfcp-watermark.image?)
-另外支持项目的`修改`与`删除`♻️ 这里就不做过多展示
+2️⃣ 新建项目
+<img src="./gifs/添加.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
+3️⃣ 修改项目
+<img src="./gifs/修改.gif" alt style="display: block; margin: 0 auto; max-width: 100%;">
+另外支持项目的`删除`♻️ 这里就不做过多展示
 
 ## 🚅 安装
 #### 前端
