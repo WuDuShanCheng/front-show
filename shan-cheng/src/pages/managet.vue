@@ -35,7 +35,7 @@
                   </el-rate>
                   <div class="list-item-content-btn">
                     <span @click.stop="openEdit(pro.id)">简介</span>
-                    <span>打开</span>
+                    <span @click.stop="openUrl(pro.id)">打开</span>
                   </div>
                 </div>
               </li>
@@ -55,7 +55,7 @@
 <script>
   import GitControl from "@/components/GitControl/GitControl";
   import CreateProDialog from "@/components/CreateDialog/CreateProDialog";
-  import {findPros, findProTypes} from "@/api/project"
+  import {findProById, findPros, findProTypes} from "@/api/project"
 
   export default {
     name: "managet",
@@ -88,6 +88,11 @@
         this.curId = id
         // 打开弹框
         this.showProEdit = true
+      },
+      async openUrl(id){
+        //获取项目url
+        let pro = (await findProById({id: id})).list
+        window.open(pro.url, "_blank");
       },
       async closeEdit(){
         //项目类型分类

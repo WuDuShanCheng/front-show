@@ -4,7 +4,7 @@
  * @Date: 2022/4/20 8:15
 -->
 <template>
-  <el-dialog :visible.sync="show" width="740px" custom-class="dialog" append-to-body :before-close="beforeClose">
+  <el-dialog :visible.sync="show" width="740px" custom-class="dialog" append-to-body :before-close="beforeClose"  >
     <div class="edit" v-if="curId!=-1">
       <div class="segmented-control">
         <input type="radio" name="tab" value="1" id="tab-1" checked/>
@@ -25,7 +25,10 @@
         <div class="segmented-control__color"></div>
       </div>
     </div>
-    <div class="dialog">
+    <div     v-loading="loading"
+             element-loading-text="拼命加载中"
+             element-loading-spinner="el-icon-loading"
+             class="dialog">
       <div class="manage-body mb50">
         <div class="manage-body-title">
           <svg class="icon w30 h30 mr10" aria-hidden="true">
@@ -320,6 +323,8 @@
         srcList: [],
         //前缀
         prefix: '#',
+        //显示正在加载
+        loading:true
       }
     },
     async created() {
@@ -351,6 +356,7 @@
         this.type = 'edit'
       }
       this.asyncCreated = true
+      this.loading = false
     },
     methods: {
       //关闭之前的回调
