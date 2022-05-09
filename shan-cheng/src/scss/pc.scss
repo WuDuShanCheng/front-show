@@ -1,0 +1,20 @@
+.nav {
+  background: #f7f8fa;
+  padding: 10px;
+
+  .nav-title {
+    font-size: 12px;
+    color: #969799;
+    margin: 10px 0;
+  }
+
+  .nav-item{
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+}

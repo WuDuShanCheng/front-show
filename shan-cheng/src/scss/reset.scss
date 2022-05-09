@@ -1,0 +1,141 @@
+// 所有设置为怪异盒模型
+* {
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    // width: 6px; /*高宽分别对应横竖滚动条的尺寸*/
+    // height: 4px;
+
+    display: none; /* Chrome Safari */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 20px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+html,body{
+  margin: 0 !important;
+  font-size: 16px;
+}
+
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+pre,
+xmp {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+textarea,
+select,
+pre,
+xmp,
+tt,
+code,
+kbd,
+samp {
+  line-height: 1.5;
+  font-family: tahoma, arial, "Hiragino Sans GB", simsun, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: tahoma, arial, "Hiragino Sans GB", "微软雅黑", simsun, sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  //字体粗细 -- 正常
+  font-weight: normal;
+}
+
+address,
+cite,
+dfn,
+em,
+i,
+optgroup,
+var {
+  //字体风格 -- 正常
+  font-style: normal;
+}
+
+table {
+  //边框会合并为一个单一的边框
+  border-collapse: collapse;
+  //属性设置相邻单元格的边框间的距离
+  border-spacing: 0;
+  //水平对齐方式
+  text-align: left;
+}
+
+caption,
+th {
+  //规定应该从父元素继承 text-align 属性的值
+  text-align: inherit;
+}
+
+
+ul,
+ol,
+menu {
+  //去掉默认样式
+  list-style: none;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img,
+object,
+input,
+textarea,
+select {
+  //不采用基线对齐
+  vertical-align: middle;
+}
+
+body {
+  font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
+  color: #333;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
+}

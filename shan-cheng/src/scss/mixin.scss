@@ -1,0 +1,11 @@
+// 文本溢出样式，clamp到多少行溢出时显示缩略字符
+@mixin text-clamp($clamp: 1) {
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $clamp;
+  overflow: hidden;
+  line-height: normal;
+}

@@ -1,0 +1,259 @@
+@import "variable.scss";
+@import "mixin.scss";
+
+.page {
+  background-color: #f7f8fa;
+  height: 100%;
+}
+
+.bg-white {
+  background: #ffffff;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+//高度100%
+.vh-100 {
+  height: 100vh;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+@for $i from 0 through 100 {
+  .h#{$i} {
+    height: #{$i}px !important;
+  }
+}
+
+@for $i from 0 through 300 {
+  .w#{$i} {
+    width: #{$i}px !important;
+  }
+}
+
+@for $i from 0 through 100 {
+  .m#{$i} {
+    margin: #{$i}px !important;
+  }
+  .p#{$i} {
+    padding: #{$i}px !important;
+  }
+}
+
+// flex占比
+@for $i from 0 through 10 {
+  .f#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+// font-size 10~100 px
+@for $i from 10 through 100 {
+  .f#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+@for $i from 0 through 10 {
+  .flex-#{$i} {
+    flex: $i;
+  }
+}
+
+// margin/padding-[direction] 0~100 px
+@for $i from 0 through 100 {
+  .mt#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mr#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mb#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .ml#{$i} {
+    margin-left: #{$i}px !important;
+  }
+  .pt#{$i} {
+    padding-top: #{$i}px !important;
+  }
+  .pr#{$i} {
+    padding-right: #{$i}px !important;
+  }
+  .pb#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+  .pl#{$i} {
+    padding-left: #{$i}px !important;
+  }
+}
+
+// flex布局
+.flex,
+.flex-column {
+  display: flex;
+
+  &.inline {
+    display: inline-flex;
+  }
+
+  //折行
+  &.flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &.flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  &.flex-wrap-reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  //横向对齐方式
+  &.row-left {
+    justify-content: flex-start;
+  }
+
+  &.row-right {
+    justify-content: flex-end;
+  }
+
+  &.row-center {
+    justify-content: center;
+  }
+
+  &.row-between {
+    justify-content: space-between;
+  }
+
+  &.row-around {
+    justify-content: space-around;
+  }
+
+  //纵向对齐方式
+  &.col-top {
+    align-items: flex-start;
+  }
+
+  &.col-bottom {
+    align-items: flex-end;
+  }
+
+  &.col-center {
+    align-items: center;
+  }
+
+  &.col-baseline {
+    align-items: baseline;
+  }
+
+  &.col-stretch {
+    align-items: stretch;
+  }
+
+  // 纵向flex
+  &.flex-column {
+    flex-direction: column;
+    //横向对齐方式
+    &.row-center {
+      align-items: center;
+    }
+
+    &.row-left {
+      align-items: flex-start;
+    }
+
+    &.row-right {
+      align-items: flex-end;
+    }
+
+    &.row-between {
+      align-items: stretch;
+    }
+
+    &.col-center {
+      justify-content: center;
+    }
+
+    &.col-top {
+      justify-content: flex-start;
+    }
+
+    &.col-bottom {
+      justify-content: flex-end;
+    }
+  }
+}
+
+// 文本限制行数(防止溢出)
+.ellipsis-1 {
+  @include text-clamp(1)
+}
+
+// 字体颜色
+.f-grey {
+  color: $color-grey;
+}
+
+.f-white {
+  color: #ffffff;
+}
+
+.f-red {
+  color: $color-red;
+}
+
+.f-black {
+  color: $color-black;
+}
+
+.f-dark-grey {
+  color: rgba(32, 39, 47, 1);
+}
+
+.f-theme {
+  color: $color-theme;
+}
+
+.f-countDowm {
+  color: #fed5c3;
+}
+
+.f-h5-theme {
+  color: $h5-color-theme !important;
+}
+
+.f-h5-grey {
+  color: #c7c8c9;
+}
+
+.bg-theme {
+  background: $color-theme;
+}
+
+// flex居中
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//text水平居中
+.txt-center {
+  text-align: center;
+}

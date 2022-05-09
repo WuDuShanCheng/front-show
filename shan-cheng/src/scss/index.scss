@@ -1,0 +1,10 @@
+/*
+  总样式入口处
+*/
+
+@import "base.scss";  //基本样式
+@import "reset.scss";
+@import "imgpond.scss";
+@import "element.scss";
+@import "pc.scss";
+@import "./iconfont/iconfont.css"; //引入iconfont市场挑选的图标
