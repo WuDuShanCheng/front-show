@@ -1,5 +1,5 @@
 <!--
- * @Description: 
+ * @Description:
  * @Autor: ZhiHao
  * @Date: 2022/4/19 16:50
 -->
@@ -17,7 +17,7 @@
       toGit() {
         console.log("toGit");
 
-        window.open("https://github.com/WuDuShanCheng/shan-cheng", "_blank");
+        window.open("https://github.com/WuDuShanCheng/front-show", "_blank");
       },
     },
   }
