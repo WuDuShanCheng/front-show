@@ -24,7 +24,9 @@ Vue.use(globalMethods)
 import animated from 'animate.css'
 Vue.use(animated)
 
-//
+//引入全局指令
+import "@/utils/globalDirective"
+
 //request封装
 import request from '@/utils/request'
 import Imgpond from 'imgpond'
