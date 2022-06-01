@@ -237,6 +237,7 @@
       right: 10px;
       bottom: 100px;
       width: 340px;
+      transform: scale(0.8);
     }
   }
 </style>
