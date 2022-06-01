@@ -234,9 +234,9 @@
 
     .manage-persion{
       position: fixed;
-      left: 10px;
+      right: 10px;
       bottom: 100px;
-      width: 350px;
+      width: 340px;
     }
   }
 </style>
