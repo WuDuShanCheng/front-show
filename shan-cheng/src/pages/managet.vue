@@ -49,6 +49,8 @@
     <div v-if="showProEdit">
       <create-pro-dialog ref="proDialog" :curId="curId" @close="closeEdit"></create-pro-dialog>
     </div>
+
+    <img class="manage-persion" src="../assets/haozi.gif" />
   </div>
 </template>
 
@@ -228,6 +230,13 @@
           }
         }
       }
+    }
+
+    .manage-persion{
+      position: fixed;
+      left: 10px;
+      bottom: 100px;
+      width: 350px;
     }
   }
 </style>
